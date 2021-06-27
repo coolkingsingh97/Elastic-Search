@@ -1,0 +1,21 @@
+## Setting up Elastic search on Linux WSL for Windows ##
+
+## Get the link of the latest version for your setup from the elastic website ##
+
+curl https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.13.2-linux-x86_64.tar.gz --output elasticsearch.tar.gz
+
+tar xvzf elasticsearch.tar.gz
+
+## Edit the configuration file to run only one node ##
+
+nano config/elasticsearch.yml
+
+## Inside the file ##
+cluster.name: DataEngineeringPython
+node.name: OnlyNode
+
+## Run Elasticsearch ##
+bin/elasticsearch
+
+## https://localhost::9200 ##
+
