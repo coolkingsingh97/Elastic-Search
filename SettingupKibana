@@ -1,0 +1,13 @@
+## Setting Up Kibana ##
+## Kibana is the UI for ElasticSearch ## 
+## NOTE: ELasticsearch must be running for Kibana to work ##
+
+## Installing Kibana ##
+curl -O https://artifacts.elastic.co/downloads/kibana/kibana-7.13.2-linux-x86_64.tar.gz
+curl https://artifacts.elastic.co/downloads/kibana/kibana-7.13.2-linux-x86_64.tar.gz.sha512 | shasum -a 512 -c -
+tar -xzf kibana-7.13.2-linux-x86_64.tar.gz
+
+## Running Kibana ##
+
+bin/kibana
+
