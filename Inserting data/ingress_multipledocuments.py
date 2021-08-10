@@ -29,9 +29,8 @@ for x in range(998)
 # Passing the array of JSON to elasticsearch using the helper function
 res = helpers.bulk(es, actions)
 
-print(res['result'])
 
-# Confirmation if the document has been added
-print(res['result'])
+# Confirmation how many lines added
+print(res[0])
 
 
